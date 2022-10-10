@@ -11,9 +11,10 @@ const animals = [
 /**
  * change the content of the map function
  **/
-const animalsInHTML = animals.map((singleAnimal, i) => {
-  return <li>hello</li>;
+ const animalsInHTML = animals.map((singleAnimal, i) => {
+  return <li key={i}>{singleAnimal.label}</li>;
 });
+
 const container = document.getElementById('root');
 
 // create a root
